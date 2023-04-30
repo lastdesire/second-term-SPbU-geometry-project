@@ -4,11 +4,8 @@ namespace GeometryProject
 {
     internal class Program
     {
-        
-
         static void Main(string[] args)
         {
-            PrintInformationAboutTask();
             buildCube();
             
             Console.ReadLine();
@@ -19,7 +16,6 @@ namespace GeometryProject
             var A = new double[3];
             var B = new double[3];
             var C = new double[3];
-           
 
             Console.WriteLine("Введите точку A (вводите по координатам):"); // (x1, y1, z1)
             for (var i = 0; i < 3; i++)
@@ -31,6 +27,7 @@ namespace GeometryProject
                 }
 
             }
+            
             Console.WriteLine("Введите точку B (вводите по координатам):"); // (x2, y2, z2)
             for (var i = 0; i < 3; i++)
             {
@@ -41,6 +38,7 @@ namespace GeometryProject
                 }
 
             }
+            
             Console.WriteLine("Введите точку C (вводите по координатам):"); // (x3, y3, z3)
             for (var i = 0; i < 3; i++)
             {
@@ -242,11 +240,6 @@ namespace GeometryProject
             Console.WriteLine($"D\"\": x7 = {newNewD[0]}, y7 = {newNewD[1]}, z7 = {newNewD[2]}");
             Console.WriteLine($"D\"\"\": x8 = {newNewNewD[0]}, y8 = {newNewNewD[1]}, z8 = {newNewNewD[2]}");
             Console.WriteLine("Теперь берем координаты по х и y, строя проекцию на ось xOy.");
-        }
-        
-        static void PrintInformationAboutTask()
-        { 
-            // ToDo
         }
     }
 }
